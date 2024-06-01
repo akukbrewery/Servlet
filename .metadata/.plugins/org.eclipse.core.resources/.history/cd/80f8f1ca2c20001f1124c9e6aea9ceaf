@@ -5,8 +5,7 @@ import javax.servlet.http.*;
 
 public class SqServlet extends HttpServlet {
 	 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException {
-			HttpSession session=req.getSession();
-	 		int k=(int)(session.getAttribute("k"));
+			int k=Integer.parseInt(req.getParameter("k"));
 			k=k*k;
 	 		PrintWriter out = res.getWriter();
 			out.println("Result is "+k);
