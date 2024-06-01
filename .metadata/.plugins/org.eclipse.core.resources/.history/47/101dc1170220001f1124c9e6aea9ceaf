@@ -1,0 +1,7 @@
+package com.telusko;
+
+import HttpServlet;
+
+public class SqServlet extends HttpServlet {
+
+}

@@ -1,0 +1,9 @@
+package com.telusko;
+
+import javax.servlet.http.*;
+
+public class SqServlet extends HttpServlet {
+		public void doGet() {
+			System.out.println("hi ureached SqServlet");
+		}
+}
